@@ -12,15 +12,15 @@ const initialState = {
   trade: '',
 };
 
-export default function ShoeForm({ obj = {} }) {
+export default function shoeForm({ obj = {} }) {
   const history = useHistory();
   const [formInput, setFormInput] = useState(initialState);
 
   useEffect(() => {
     if (obj.firebaseKey) {
       setFormInput({
-        shoeName: obj.shoemName,
-        shoeImage: obj.ishoeImage,
+        shoeName: obj.shoeName,
+        shoeImage: obj.shoeImage,
         shoeDescription: obj.shoeDescription,
         firebaseKey: obj.firebaseKey,
         uid: obj.uid,
@@ -41,16 +41,15 @@ export default function ShoeForm({ obj = {} }) {
     e.preventDefault();
     if (obj.firebaseKey) {
       updateShoe(formInput).then(() => {
-        history.push('/all stuff');
+        history.push('/all');
         console.warn('Shoes Updated!', formInput);
       });
     } else {
       createShoe({ ...formInput }).then(() => {
-        history.push('/stuff');
+        history.push('/all');
       });
     }
   };
-
   return (
     <form onSubmit={handleClick}>
       <div className="mb-3">
@@ -94,6 +93,7 @@ export default function ShoeForm({ obj = {} }) {
   );
 }
 
-ShoeForm.propTypes = {
+shoeForm.propTypes = {
   obj: PropTypes.shape({}).isRequired,
+  uid: PropTypes.string.isRequired,
 };

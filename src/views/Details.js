@@ -1,5 +1,21 @@
-/* import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useParams, Link, useHistory } from 'react-router-dom';
+import styled from 'styled-components';
+import { deleteShoe, getSingleShoe, updateShoe } from '../api/shoedata';
+
+const DetailsStyle = styled.div`
+  max-width: 1200px;
+  margin: 42px auto;
+  color: black;
+
+  img {
+    max-width: 300px;
+  }
+
+  .btnn {
+    margin-right: 8px;
+  }
+`;
 
 export default function Details() {
   const history = useHistory();
@@ -59,4 +75,3 @@ export default function Details() {
     </DetailsStyle>
   );
 }
- */

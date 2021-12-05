@@ -9,15 +9,15 @@ const getAllShoes = (uid) => new Promise((resolve, reject) => {
     .catch(reject);
 });
 
-const createShoe = (itemObj) => new Promise((resolve, reject) => {
+const createShoe = (shoeObj) => new Promise((resolve, reject) => {
   axios
-    .post(`${dbURL}/items.json`, itemObj)
+    .post(`${dbURL}/shoes.json`, shoeObj)
     .then((response) => {
       const firebaseKey = response.data.name;
       axios
-        .patch(`${dbURL}/items/${firebaseKey}.json`, { firebaseKey })
+        .patch(`${dbURL}/shoes/${firebaseKey}.json`, { firebaseKey })
         .then(() => {
-          getAllShoes(itemObj.uid).then(resolve);
+          getAllShoes(shoeObj.uid).then(resolve);
         });
     })
     .catch(reject);
@@ -25,22 +25,22 @@ const createShoe = (itemObj) => new Promise((resolve, reject) => {
 
 const getSingleShoe = (firebaseKey) => new Promise((resolve, reject) => {
   axios
-    .get(`${dbURL}/items/${firebaseKey}.json`)
+    .get(`${dbURL}/shoes/${firebaseKey}.json`)
     .then((response) => resolve(response.data))
     .catch(reject);
 });
 
 const deleteShoe = (firebaseKey, uid) => new Promise((resolve, reject) => {
   axios
-    .delete(`${dbURL}/items/${firebaseKey}.json`)
+    .delete(`${dbURL}/shoes/${firebaseKey}.json`)
     .then(() => getAllShoes(uid).then(resolve))
     .catch(reject);
 });
 
-const updateShoe = (itemObj) => new Promise((resolve, reject) => {
+const updateShoe = (shoeObj) => new Promise((resolve, reject) => {
   axios
-    .patch(`${dbURL}/items/${itemObj.firebaseKey}.json`, itemObj)
-    .then(() => getAllShoes(itemObj.uid).then(resolve))
+    .patch(`${dbURL}/shoes/${shoeObj.firebaseKey}.json`, shoeObj)
+    .then(() => getAllShoes(shoeObj.uid).then(resolve))
     .catch(reject);
 });
 

@@ -27,9 +27,10 @@ function Initialize() {
           <Routes uid={user.uid} />
         </>
       ) : (
-        {
-          /* <SignIn user={user} /> */
-        }
+        /*  {
+          SignIn user={user}
+        } */
+        'This is a comment to test '
       )}
     </div>
   );
