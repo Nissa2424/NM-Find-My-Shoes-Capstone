@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import firebase from 'firebase';
 import 'firebase/auth';
 import Routes from '../routes';
+import SignIn from '../views/SignIn';
 import Navigation from '../components/Navigation';
 
 function Initialize() {
@@ -27,10 +28,7 @@ function Initialize() {
           <Routes uid={user.uid} />
         </>
       ) : (
-        /*  {
-          SignIn user={user}
-        } */
-        'This is a comment to test '
+        <SignIn user={user} />
       )}
     </div>
   );
