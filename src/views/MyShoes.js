@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import ShoeCard from '../components/shoeCard';
+import ShoeCard from '../components/ShoeCard';
 import { getAllShoes } from '../api/shoedata';
 
 const CardStyle = styled.div`
