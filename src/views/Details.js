@@ -12,7 +12,7 @@ const DetailsStyle = styled.div`
     max-width: 300px;
   }
 
-  .btnn {
+  .btn {
     margin-right: 8px;
   }
 `;

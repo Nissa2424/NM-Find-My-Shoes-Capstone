@@ -1,80 +1,80 @@
 {
-    "item1": {
-      "itemName": "Tiketa Sneaker",
-      "itemImage": "https://statics-cdn.fashionette.de/f/6/4/7/f647a2213daa1782fa2bf46254d96e8eb434545c_a0147683_christian_louboutin_1_pdp.jpeg",
-      "itemDescription": "Signature Louboutin red marks the lining and sawtooth sole of this sleek pull-on sneaker shaped with a neoprene and leather upper and cushioned-comfort footbed.",
+    "shoe1": {
+      "shoeName": "Tiketa Sneaker",
+      "shoeImage": "https://statics-cdn.fashionette.de/f/6/4/7/f647a2213daa1782fa2bf46254d96e8eb434545c_a0147683_christian_louboutin_1_pdp.jpeg",
+      "shoeDescription": "Signature Louboutin red marks the lining and sawtooth sole of this sleek pull-on sneaker shaped with a neoprene and leather upper and cushioned-comfort footbed.",
       "uid": "100",
       "type": "tennis",
      "trade": true 
 },
-"item2": {
-    "itemName": "Gucci Pump",
-    "itemImage": "https://i.pinimg.com/originals/d8/f7/78/d8f7783719aa9bf874e25c724115d22c.jpg",
-    "itemDescription": "Make a statement in the Jewel Badgley Mischka Jaden at the next evening event, or assert your individuality on your wedding day with this on-trend evening stiletto.",
+"shoe2": {
+    "shoeName": "Gucci Pump",
+    "shoeImage": "https://i.pinimg.com/originals/d8/f7/78/d8f7783719aa9bf874e25c724115d22c.jpg",
+    "shoeDescription": "Make a statement in the Jewel Badgley Mischka Jaden at the next evening event, or assert your individuality on your wedding day with this on-trend evening stiletto.",
     "uid": "101",
     "type": "flat",
      "trade": false
   },
-  "item3": {
-    "itemName": "G-Terlato-Lilly",
-    "itemImage": "https://www.cocktailrevolution.net.au/wp-content/uploads/2021/03/G-Terlato-Lilly-Black-Velia-Black-Details.jpg",
-    "itemDescription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry..",
+  "shoe3": {
+    "shoeName": "G-Terlato-Lilly",
+    "shoeImage": "https://www.cocktailrevolution.net.au/wp-content/uploads/2021/03/G-Terlato-Lilly-Black-Velia-Black-Details.jpg",
+    "shoeDescription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry..",
     "uid": "102",
     "type": "flat",
      "trade": true
   },
-  "item4": {
-    "itemName": "Saint Laurent Opyum",
-    "itemImage": "https://images.flannels.com/images/products/23324965_4pl.jpg",
-    "itemDescription": "It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
+  "shoe4": {
+    "shoeName": "Saint Laurent Opyum",
+    "shoeImage": "https://images.flannels.com/images/products/23324965_4pl.jpg",
+    "shoeDescription": "It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
     "uid": "103",
     "type": "boot",
      "trade": false
   },
-  "item5": {
-    "itemName": "Valentino Garavani  Signature Pump",
-    "itemImage": "https://i.pinimg.com/originals/b0/5e/79/b05e79c3f71106e7701aaeb60a5050bb.png",
-    "itemDescription": "It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+  "shoe5": {
+    "shoeName": "Valentino Garavani  Signature Pump",
+    "shoeImage": "https://i.pinimg.com/originals/b0/5e/79/b05e79c3f71106e7701aaeb60a5050bb.png",
+    "shoeDescription": "It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
     "uid": "104",
     "type": "tennis",
      "trade": true
   },
-  "item6": {
-    "itemName": "Gucci Heels Bow Heel",
-    "itemImage": "https://cdn1.jolicloset.com/imgr/full/2020/07/209304-1/gucci-red-leather-web-bow-sandals.jpg",
-    "itemDescription": "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.",
+  "shoe6": {
+    "shoeName": "Gucci Heels Bow Heel",
+    "shoeImage": "https://cdn1.jolicloset.com/imgr/full/2020/07/209304-1/gucci-red-leather-web-bow-sandals.jpg",
+    "shoeDescription": "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.",
     "uid": "105",
     "type": "heels",
      "trade": false
   },
-  "item7": {
-    "itemName": "Gucci Platforms",
-    "itemImage": "https://cdna.lystit.com/200/250/tr/photos/ruelala/9dfccb71/gucci-7100-GG-Fringe-Leather-Platform-Pump.jpeg",
-    "itemDescription": "Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source.",
+  "shoe7": {
+    "shoeName": "Gucci Platforms",
+    "shoeImage": "https://cdna.lystit.com/200/250/tr/photos/ruelala/9dfccb71/gucci-7100-GG-Fringe-Leather-Platform-Pump.jpeg",
+    "shoeDescription": "Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source.",
     "uid": "106",
     "type": "heels",
      "trade": true
   },
-  "item8": {
-    "itemName": "Jimmy Choo Pumps",
-    "itemImage": "https://pixel.nymag.com/imgs/daily/strategist/2018/01/03/reddit/7.w540.h356.2x.jpg",
-    "itemDescription": "Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of  (The Extremes of Good and Evil) by Cicero, written in 45 BC.",
+  "shoe8": {
+    "shoeName": "Jimmy Choo Pumps",
+    "shoeImage": "https://pixel.nymag.com/imgs/daily/strategist/2018/01/03/reddit/7.w540.h356.2x.jpg",
+    "shoeDescription": "Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of  (The Extremes of Good and Evil) by Cicero, written in 45 BC.",
     "uid": "107",
     "type": "flat",
      "trade": false
   },
-  "item9": {
-    "itemName": "Dior Pumps",
-    "itemImage": "https://ae01.alicdn.com/kf/HTB1lP_Lm0nJ8KJjSszdq6yxuFXa2/Fetish-High-Heels-Sandals-Women-Designer-Shoes-Woman-Wedding-Shoes-Sexy-Pumps-Valentine-Shoes-Sexy-High.jpg_Q90.jpg_.webp",
-    "itemDescription": "This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum,",
+  "shoe9": {
+    "shoeName": "Dior Pumps",
+    "shoeImage": "https://ae01.alicdn.com/kf/HTB1lP_Lm0nJ8KJjSszdq6yxuFXa2/Fetish-High-Heels-Sandals-Women-Designer-Shoes-Woman-Wedding-Shoes-Sexy-Pumps-Valentine-Shoes-Sexy-High.jpg_Q90.jpg_.webp",
+    "shoeDescription": "This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum,",
     "uid": "108",
     "type": "heel",
      "trade": true
   },
-"item30": {
-  "itemName": "Bow in the Back Christian Louboutin",
-  "itemImage": "https://www.yournextshoes.com/wp-content/uploads/2020/11/CHRISTIAN-LOUBOUTIN-Rabakate-100-suede-pumps.jpg",
-  "itemDescription": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
+"shoe30": {
+  "shoeName": "Bow in the Back Christian Louboutin",
+  "shoeImage": "https://www.yournextshoes.com/wp-content/uploads/2020/11/CHRISTIAN-LOUBOUTIN-Rabakate-100-suede-pumps.jpg",
+  "shoeDescription": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
   "uid": "109",
   "type": "flat",
      "trade": false

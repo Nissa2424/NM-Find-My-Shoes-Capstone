@@ -36,9 +36,11 @@ export default function ShoeCard({ shoe, setShoes }) {
 
 ShoeCard.propTypes = {
   shoe: PropTypes.shape({
-    shoeName: PropTypes.string,
-    shoeImage: PropTypes.string,
     shoeDescription: PropTypes.string,
+    shoeImage: PropTypes.string,
+    shoeName: PropTypes.string,
+    trade: PropTypes.string,
+    type: PropTypes.string,
     firebaseKey: PropTypes.string,
     uid: PropTypes.string,
   }).isRequired,
