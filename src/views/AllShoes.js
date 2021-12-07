@@ -1,10 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
-import styled from 'styled-components';
 import ShoeCard from '../components/ShoeCard';
 import { getAllShoes } from '../api/shoedata';
 
-const CardStyle = styled.div`
+/* const CardStyle = styled.div`
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -33,8 +32,8 @@ const TitleStyle = styled.div`
   h1 {
     text-align: clearInterval;
   }
-`;
-export default function MyShoes({ uid }) {
+`;  */
+export default function AllShoes({ uid }) {
   const [shoes, setShoes] = useState([]);
 
   useEffect(() => {
@@ -51,18 +50,10 @@ export default function MyShoes({ uid }) {
     <div>
       {shoes ? (
         <>
-          <TitleStyle>
-            <h1>My Shoes</h1>
-          </TitleStyle>
-          <CardStyle>
-            {shoes.map((shoe) => (
-              <ShoeCard
-                key={shoe.firebaseKey}
-                shoe={shoe}
-                setShoes={setShoes}
-              />
-            ))}
-          </CardStyle>
+          <h1>All uuuuShoes</h1>
+          {shoes.map((shoe) => (
+            <ShoeCard key={shoe.firebaseKey} shoe={shoe} setShoes={setShoes} />
+          ))}
         </>
       ) : (
         'Add Shoes'
@@ -70,7 +61,7 @@ export default function MyShoes({ uid }) {
     </div>
   );
 }
-MyShoes.propTypes = {
+AllShoes.propTypes = {
   uid: PropTypes.string,
 };
-MyShoes.defaultProps = { uid: '' };
+AllShoes.defaultProps = { uid: '' };

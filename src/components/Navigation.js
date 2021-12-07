@@ -27,12 +27,12 @@ const NavStyle = styled.div`
   }
 
   .space {
-    flex: 1;
+  flex: 1;
   }
 
-  .home {
-    font-size: 32px;
-    font-weight: bold;
+  .homepage {
+  font-size: 32px
+  font-weight: bold;
   }
 `;
 
@@ -42,63 +42,51 @@ export default function Navigation() {
   return (
     <NavStyle>
       {/* <ButtonGroup size="med">
-  <Link to="/home">
-<button
-  onClick={() => history.push('/home')}
-  type="button"
-  className="btn btn-light border border-dark"
->
-  Home
-</button>
-  </Link>
-  <Link to="/new">
-<button
-onClick={() => history.push('/new')}
-type="button"
-className="btn btn-light border border-dark"
->
-New
-</button>
-</Link>
-<Link to="/all">
-<button
-onClick={() => history.push('/all')}
-type="button"
-className="btn btn-light border border-dark"
->
-My all
-</button>
-<button
-onClick={signOutUser}
-type="button"
-className="btn btn-danger"
->
-Logout
-</button>
-</Link>
-</ButtonGroup> */}
+        <Link to="/homepage">
+          <button
+            onClick={() => history.push('/homepage')}
+            type="button"
+            className="btn btn-light border border-dark"
+          >
+            Homepage
+          </button>
+        </Link>
+        <Link to="/addshoes">
+          <button
+            onClick={() => history.push('/addshoes')}
+            type="button"
+            className="btn btn-light border border-dark"
+          >
+            Add Shoes
+          </button>
+        </Link>
+        <Link to="/all">
+          <button
+            onClick={() => history.push('/all')}
+            type="button"
+            className="btn btn-light border border-dark"
+          >
+            All Shoes
+          </button>
+          <button
+            onClick={signOutUser}
+            type="button"
+            className="btn btn-danger"
+          >
+            Logout
+          </button>
+        </Link>
+      </ButtonGroup> */}
       <nav className="navbar navbar-expand-lg">
         <div className="container-fluid">
-          <Link className="nav-link active home" to="/home">
+          <Link className="nav-link active homepage" to="/homepage">
             Homepage
           </Link>
-          <Link className="nav-link active myall" to="/all">
-            Display All
-          </Link>
-          <Link className="nav-link active heels" to="/heels">
-            Heels
-          </Link>
-          <Link className="nav-link active tennis" to="/tennis">
-            Tennis
-          </Link>
-          <Link className="nav-link active flats" to="/flats">
-            Flats
-          </Link>
-          <Link className="nav-link active trade" to="/trade">
-            Trade
-          </Link>
-          <Link className="nav-link active new" to="/new">
+          <Link className="nav-link active new" to="/add-to-collection">
             Add to Collection
+          </Link>
+          <Link className="nav-link active allShoesll" to="/all">
+            All Shoes
           </Link>
           <div className="space" />
           <button
