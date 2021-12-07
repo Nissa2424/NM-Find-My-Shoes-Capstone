@@ -12,8 +12,8 @@ const NavStyle = styled.div`
   }
 
   img {
-    width: 120px;
-    height: 80px;
+    width: 200px;
+    height: 200px;
   }
 
   .nav-link:hover {

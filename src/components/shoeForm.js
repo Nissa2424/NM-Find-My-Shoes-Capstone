@@ -12,7 +12,7 @@ const FormStyle = styled.div`
     flex-direction: column;
   }
   .input-group {
-    width: 600px;
+    width: 500px;
     margin: 10px;
   }
   .btn {

@@ -1,17 +1,18 @@
 import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
+import styled from 'styled-components';
 import ShoeCard from '../components/ShoeCard';
 import { getAllShoes } from '../api/shoedata';
 
-/* const CardStyle = styled.div`
+const CardStyle = styled.div`
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-evenly;
 
   img {
-    width: 400px;
-    height: 200px;
+    width: 100px;
+    height: 100px;
     object-fit: cover;
     border: 1px solid black;
   }
@@ -32,7 +33,7 @@ const TitleStyle = styled.div`
   h1 {
     text-align: clearInterval;
   }
-`;  */
+`;
 export default function AllShoes({ uid }) {
   const [shoes, setShoes] = useState([]);
 
@@ -50,10 +51,18 @@ export default function AllShoes({ uid }) {
     <div>
       {shoes ? (
         <>
-          <h1>All uuuuShoes</h1>
-          {shoes.map((shoe) => (
-            <ShoeCard key={shoe.firebaseKey} shoe={shoe} setShoes={setShoes} />
-          ))}
+          <TitleStyle>
+            <h1>All uuuuShoes</h1>
+          </TitleStyle>
+          <CardStyle>
+            {shoes.map((shoe) => (
+              <ShoeCard
+                key={shoe.firebaseKey}
+                shoe={shoe}
+                setShoes={setShoes}
+              />
+            ))}
+          </CardStyle>
         </>
       ) : (
         'Add Shoes'
