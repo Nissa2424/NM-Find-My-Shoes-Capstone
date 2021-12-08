@@ -4,7 +4,7 @@ import styled from 'styled-components';
 import { deleteShoe, getSingleShoe, updateShoe } from '../api/shoedata';
 
 const DetailsStyle = styled.div`
-  max-width: 100px;
+  max-width: 800px;
   margin: 42px auto;
   color: black;
 
