@@ -5,6 +5,7 @@ import AllShoes from '../views/AllShoes';
 import ShoeForm from '../components/ShoeForm';
 import Details from '../views/Details';
 import Homepage from '../views/Homepage';
+import EditView from '../views/EditView';
 
 export default function Routes({ uid }) {
   const location = useLocation();
@@ -22,11 +23,11 @@ export default function Routes({ uid }) {
           <ShoeForm uid={uid} obj={{}} />
         </Route>
         <Route exact path="/details/:firebaseKey" component={Details} />
-        {/* <Route
+        <Route
           exact
           path="/edit/key"
           component={() => <EditView uid={uid} />}
-        /> */}
+        />
       </Switch>
     </div>
   );
