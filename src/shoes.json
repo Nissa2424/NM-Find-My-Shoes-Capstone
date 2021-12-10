@@ -1,8 +1,8 @@
 {
     "shoe1": {
       "shoeName": "Tiketa Sneaker",
-      "shoeImage": "https://statics-cdn.fashionette.de/f/6/4/7/f647a2213daa1782fa2bf46254d96e8eb434545c_a0147683_christian_louboutin_1_pdp.jpeg",
-      "shoeDescription": "Signature Louboutin red marks the lining and sawtooth sole of this sleek pull-on sneaker shaped with a neoprene and leather upper and cushioned-comfort footbed.",
+      "shoeImage": "A a light canvas or leather soft-soled shoe suitable for tennis or casual wear.tps://statics-cdn.fashionette.de/f/6/4/7/f647a2213daa1782fa2bf46254d96e8eb434545c_a0147683_christian_louboutin_1_pdp.jpeg",
+      "shoeDescription": "a light canvas or leather soft-soled shoe suitable for tennis or casual wear",
       "uid": "100",
       "type": "tennis",
      "trade": true 
@@ -10,7 +10,7 @@
 "shoe2": {
     "shoeName": "Gucci Pump",
     "shoeImage": "https://i.pinimg.com/originals/d8/f7/78/d8f7783719aa9bf874e25c724115d22c.jpg",
-    "shoeDescription": "Make a statement in the Jewel Badgley Mischka Jaden at the next evening event, or assert your individuality on your wedding day with this on-trend evening stiletto.",
+    "shoeDescription": "High-heeled shoes are shoes which raise the heel of the wearer's foot significantly higher than the toes.",
     "uid": "101",
     "type": "flat",
      "trade": false
@@ -18,7 +18,7 @@
   "shoe3": {
     "shoeName": "G-Terlato-Lilly",
     "shoeImage": "https://www.cocktailrevolution.net.au/wp-content/uploads/2021/03/G-Terlato-Lilly-Black-Velia-Black-Details.jpg",
-    "shoeDescription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry..",
+    "shoeDescription": "Pumps. Also known as simply high heels, pumps are usually wider and between 2 and 3 inches in height",
     "uid": "102",
     "type": "flat",
      "trade": true
@@ -26,9 +26,9 @@
   "shoe4": {
     "shoeName": "Saint Laurent Opyum",
     "shoeImage": "https://images.flannels.com/images/products/23324965_4pl.jpg",
-    "shoeDescription": "It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
+    "shoeDescription": "The ankle strap heels goes around the ankle making the heels more secure and comfortable",
     "uid": "103",
-    "type": "boot",
+    "type": "heel",
      "trade": false
   },
   "shoe5": {

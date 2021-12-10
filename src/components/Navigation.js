@@ -12,8 +12,8 @@ const NavStyle = styled.div`
   }
 
   img {
-    width: 200px;
-    height: 200px;
+    width: 1500px;
+    height: 700px;
   }
 
   .nav-link:hover {
@@ -85,8 +85,11 @@ export default function Navigation() {
           <Link className="nav-link active new" to="/add-to-collection">
             Add to Collection
           </Link>
-          <Link className="nav-link active allShoesll" to="/all">
+          <Link className="nav-link active allShoes" to="/all">
             All Shoes
+          </Link>
+          <Link className="nav-link active flats" to="/flats">
+            Flats
           </Link>
           <div className="space" />
           <button
