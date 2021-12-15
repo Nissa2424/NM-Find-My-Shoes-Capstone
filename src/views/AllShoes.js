@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import ShoeCard from '../components/ShoeCard';
-import { getAllShoes } from '../api/shoedata';
+import Card from '../components/Card';
+import { getAllShoes } from '../api/Shoedata';
 
 const CardStyle = styled.div`
   display: flex;
@@ -56,11 +56,7 @@ export default function AllShoes({ uid }) {
           </TitleStyle>
           <CardStyle>
             {shoes.map((shoe) => (
-              <ShoeCard
-                key={shoe.firebaseKey}
-                shoe={shoe}
-                setShoes={setShoes}
-              />
+              <Card key={shoe.firebaseKey} shoe={shoe} setShoes={setShoes} />
             ))}
           </CardStyle>
         </>

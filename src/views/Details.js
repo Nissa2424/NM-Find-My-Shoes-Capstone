@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useParams, Link, useHistory } from 'react-router-dom';
 import styled from 'styled-components';
-import { deleteShoe, getSingleShoe, updateShoe } from '../api/shoedata';
+import { deleteShoe, getSingleShoe, updateShoe } from '../api/Shoedata';
 
 const DetailsStyle = styled.div`
   max-width: 800px;

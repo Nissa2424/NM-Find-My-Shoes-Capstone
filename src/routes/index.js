@@ -2,7 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Route, Switch, useLocation } from 'react-router-dom';
 import AllShoes from '../views/AllShoes';
-import ShoeForm from '../components/ShoeForm';
 import Details from '../views/Details';
 import Homepage from '../views/Homepage';
 import EditView from '../views/EditView';
@@ -21,7 +20,7 @@ export default function Routes({ uid }) {
           <AllShoes uid={uid} />
         </Route>
         <Route exact path="/add-to-collection">
-          <ShoeForm uid={uid} obj={{}} />
+          <shoeForm uid={uid} obj={{}} />
         </Route>
         <Route exact path="/details/:firebaseKey" component={Details} />
         <Route

@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import { useHistory } from 'react-router-dom';
-import { createShoe, updateShoe } from '../api/shoedata';
+import { createShoe, updateShoe } from '../api/Shoedata';
 
 const FormStyle = styled.div`
   display: flex;
@@ -26,7 +26,7 @@ const initialState = {
   uid: '',
 };
 
-export default function ShoeForm({ obj = {}, uid }) {
+export default function Form({ obj = {}, uid }) {
   const history = useHistory();
   const [formInput, setFormInput] = useState(initialState);
   useEffect(() => {
@@ -109,7 +109,7 @@ export default function ShoeForm({ obj = {}, uid }) {
     </FormStyle>
   );
 }
-ShoeForm.propTypes = {
+Form.propTypes = {
   obj: PropTypes.shape({}).isRequired,
   uid: PropTypes.string.isRequired,
 };

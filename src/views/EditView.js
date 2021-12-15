@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import { useParams } from 'react-router-dom';
-import { getSingleShoe } from '../api/shoedata';
-import ShoeForm from '../components/ShoeForm';
+import { getSingleShoe } from '../api/Shoedata';
+import Form from '../components/Form';
 
 export default function EditView({ uid }) {
   const [editShoe, setEditShoe] = useState({});
@@ -18,7 +18,7 @@ export default function EditView({ uid }) {
   }, []);
   return (
     <div>
-      <ShoeForm obj={editShoe} uid={uid} />
+      <Form obj={editShoe} uid={uid} />
     </div>
   );
 }
