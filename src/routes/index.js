@@ -6,6 +6,7 @@ import ShoeForm from '../components/ShoeForm';
 import Details from '../views/Details';
 import Homepage from '../views/Homepage';
 import EditView from '../views/EditView';
+import Flats from '../views/Flats';
 
 export default function Routes({ uid }) {
   const location = useLocation();
@@ -25,9 +26,12 @@ export default function Routes({ uid }) {
         <Route exact path="/details/:firebaseKey" component={Details} />
         <Route
           exact
-          path="/edit/key"
+          path="/edit/:key"
           component={() => <EditView uid={uid} />}
         />
+        <Route exact path="/flats">
+          <Flats uid={uid} />
+        </Route>
       </Switch>
     </div>
   );
