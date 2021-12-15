@@ -1,9 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
-import { deleteShoe } from '../api/shoedata';
+import { deleteShoe } from '../api/Shoedata';
 
-export default function ShoeCard({ shoe, setShoes }) {
+export default function Card({ shoe, setShoes }) {
   const handleClick = (method) => {
     if (method === 'delete') {
       deleteShoe(shoe.firebaseKey, shoe.uid).then((newArray) => setShoes(newArray));
@@ -34,7 +34,7 @@ export default function ShoeCard({ shoe, setShoes }) {
   );
 }
 
-ShoeCard.propTypes = {
+Card.propTypes = {
   shoe: PropTypes.shape({
     shoeName: PropTypes.string,
     shoeImage: PropTypes.string,
