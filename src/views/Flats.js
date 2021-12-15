@@ -40,7 +40,11 @@ export default function AllShoes({ uid }) {
   useEffect(() => {
     let isMounted = true;
     getAllShoes(uid).then((shoeArray) => {
-      if (isMounted) setShoes(shoeArray);
+      console.warn(shoeArray);
+      const shoeFlats = shoeArray.filter(
+        (s) => s.shoeName.toLowerCase() === 'flats',
+      );
+      if (isMounted) setShoes(shoeFlats);
     });
     return () => {
       isMounted = false;
