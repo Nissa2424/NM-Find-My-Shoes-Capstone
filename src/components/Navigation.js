@@ -12,7 +12,7 @@ const NavStyle = styled.div`
   }
 
   img {
-    width: 1500px;
+    width: 500px;
     height: 700px;
   }
 
@@ -90,6 +90,12 @@ export default function Navigation() {
           </Link>
           <Link className="nav-link active flats" to="/flats">
             Flats
+          </Link>
+          <Link className="nav-link active heels" to="/heels">
+            Heels
+          </Link>
+          <Link className="nav-link active boots" to="/boots">
+            Boots
           </Link>
           <div className="space" />
           <button

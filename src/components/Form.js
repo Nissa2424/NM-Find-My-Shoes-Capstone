@@ -13,7 +13,7 @@ const FormStyle = styled.div`
   }
   .input-group {
     width: 500px;
-    margin: 10px;
+    margin: 15px;
   }
   .btn {
     margin-left: 225px;

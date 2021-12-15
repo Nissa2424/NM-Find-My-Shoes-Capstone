@@ -6,7 +6,7 @@ import { getAllShoes } from '../api/Shoedata';
 
 const CardStyle = styled.div`
   display: flex;
-  flex-wrap: row wrap;
+  flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-evenly;
 
@@ -40,7 +40,11 @@ export default function AllShoes({ uid }) {
   useEffect(() => {
     let isMounted = true;
     getAllShoes(uid).then((shoeArray) => {
-      if (isMounted) setShoes(shoeArray);
+      console.warn(shoeArray);
+      const shoeBoots = shoeArray.filter(
+        (s) => s.shoeName.toLowerCase() === 'boots',
+      );
+      if (isMounted) setShoes(shoeBoots);
     });
     return () => {
       isMounted = false;
