@@ -7,6 +7,8 @@ import Details from '../views/Details';
 import Homepage from '../views/Homepage';
 import EditView from '../views/EditView';
 import Flats from '../views/Flats';
+import Heels from '../views/Heels';
+import Boots from '../views/Boots';
 
 export default function Routes({ uid }) {
   const location = useLocation();
@@ -31,6 +33,12 @@ export default function Routes({ uid }) {
         />
         <Route exact path="/flats">
           <Flats uid={uid} />
+        </Route>
+        <Route exact path="/heels">
+          <Heels uid={uid} />
+        </Route>
+        <Route exact path="/boots">
+          <Boots uid={uid} />
         </Route>
       </Switch>
     </div>
