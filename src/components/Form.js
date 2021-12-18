@@ -49,11 +49,15 @@ export default function Form({ obj = {}, uid }) {
     e.preventDefault();
     if (obj.firebaseKey) {
       updateShoe(formInput).then(() => {
-        history.push('/all');
+        history.push(`/details/${obj.firebaseKey}`);
         console.warn('Shoes Updated!', formInput, uid);
       });
     } else {
-      createShoe({ ...formInput, uid }).then(() => {
+      createShoe({
+        ...formInput,
+        uid,
+        dateAdded: new Date().toDateString(),
+      }).then(() => {
         resetForm();
         history.push('/all');
         console.warn('New Shoes Added!', formInput, uid);
