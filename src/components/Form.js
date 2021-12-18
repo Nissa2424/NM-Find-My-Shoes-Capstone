@@ -54,7 +54,9 @@ export default function Form({ obj = {}, uid }) {
       });
     } else {
       createShoe({
-        ...formInput,
+        shoeName: formInput.shoeName,
+        shoeImage: `https://images.weserv.nl/?url=${formInput.shoeImage}`,
+        shoeDescription: formInput.shoeDescription,
         uid,
         dateAdded: new Date().toDateString(),
       }).then(() => {
