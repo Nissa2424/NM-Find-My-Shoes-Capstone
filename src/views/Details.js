@@ -9,7 +9,7 @@ const DetailsStyle = styled.div`
   color: black;
 
   img {
-    max-width: 100px;
+    max-width: 700px;
   }
 
   .btn {

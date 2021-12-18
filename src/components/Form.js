@@ -5,20 +5,15 @@ import { useHistory } from 'react-router-dom';
 import { createShoe, updateShoe } from '../api/Shoedata';
 
 const FormStyle = styled.div`
-  display: flex;
-  justify-content: center;
-  margin-top: 60px;
-  .form {
-    flex-direction: column;
-  }
-  .input-group {
-    width: 500px;
-    margin: 15px;
-  }
-  .btn {
-    margin-left: 225px;
-  }
-`;
+text-align: center;
+background-image: url("https://www.brandingstrategyinsider.com/images/2015/11/When-To-Assess-Your-Brand-Architecture.jpg");
+position: fixed;
+min-width: 100%;
+min-height: 100%;
+background-size: cover;
+background-position: center;
+  } 
+  `;
 const initialState = {
   shoeName: '',
   shoeImage: '',
