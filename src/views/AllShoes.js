@@ -6,32 +6,33 @@ import { getAllShoes } from '../api/Shoedata';
 
 const CardStyle = styled.div`
   display: flex;
-  flex-wrap: row wrap;
+  flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-evenly;
 
   img {
+    text-align: center;
     width: 100px;
     height: 100px;
     object-fit: cover;
-    border: 1px solid black;
+    border: 5px solid black;
   }
   .card {
     background-color: #05a464;
-    margin: 5px;
+    margin: 15px;
     padding: 10px;
     text-align: center;
-    border: 1px solid black;
-    color: black;
+    border: 8px bold rosyBrown;
+    color: dark blue;
   }
   .btn {
-    border: 1px solid black;
+    border: 10px solid yellow;
     margin: 5px;
   }
 `;
 const TitleStyle = styled.div`
   h1 {
-    text-align: clearInterval;
+    text-align: center;
   }
 `;
 export default function AllShoes({ uid }) {
@@ -52,7 +53,7 @@ export default function AllShoes({ uid }) {
       {shoes ? (
         <>
           <TitleStyle>
-            <h1>All uuuuShoes</h1>
+            <h3>All Shoes-Shoe Gallery</h3>
           </TitleStyle>
           <CardStyle>
             {shoes.map((shoe) => (

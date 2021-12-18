@@ -2,18 +2,15 @@ import React from 'react';
 import styled from 'styled-components';
 
 const HomeStyle = styled.div`
-  margin-top: 70px;
-  h1 {
-    margin-bottom: 50px;
-  }
-  h3 {
-    margin: 50px;
-  }
-  img {
-    border: 1px solid black;
-  }
-  text-align: center;
-`;
+text-align: center;
+background-image: url("https://www.brandingstrategyinsider.com/images/2015/11/When-To-Assess-Your-Brand-Architecture.jpg");
+position: fixed;
+min-width: 100%;
+min-height: 60%;
+background-size: cover;
+background-position: center;
+  } 
+  `;
 
 export default function Homepage() {
   return (

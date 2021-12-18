@@ -24,11 +24,11 @@
      "trade": true
   },
   "shoe4": {
-    "shoeName": "Saint Laurent Opyum",
-    "shoeImage": "https://images.flannels.com/images/products/23324965_4pl.jpg",
+    "shoeName": "Boots",
+    "shoeImage": "https://bestwalkingshoereviews.com/wp-content/uploads/2016/11/Northside-Womens-Kathmandu-Waterproof-Snow-Boot-review.jpg",
     "shoeDescription": "The ankle strap heels goes around the ankle making the heels more secure and comfortable",
     "uid": "103",
-    "type": "heel",
+    "type": "boots",
      "trade": false
   },
   "shoe5": {
