@@ -41,11 +41,15 @@ export default function AllShoes({ uid }) {
   useEffect(() => {
     let isMounted = true;
     getAllShoes(uid).then((shoeArray) => {
-      console.warn(shoeArray);
+      /* console.warn(shoeArray); */
       const shoeHeels = shoeArray.filter(
         (s) => s.shoeName.toLowerCase() === 'heels',
       );
-      if (isMounted) setShoes(shoeHeels);
+      if (isMounted) {
+        setShoes(
+          shoeHeels.sort((a, b) => (a.dateAdded > b.dateAdded ? 1 : -1)),
+        );
+      }
     });
     return () => {
       isMounted = false;

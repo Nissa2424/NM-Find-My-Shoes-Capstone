@@ -33,7 +33,7 @@ export default function Form({ obj = {}, uid }) {
         firebaseKey: obj.firebaseKey,
         uid: obj.uid,
       });
-      console.warn(obj);
+      /* console.warn(obj); */
     }
   }, [obj]);
   const handleChange = (e) => {
@@ -50,7 +50,7 @@ export default function Form({ obj = {}, uid }) {
     if (obj.firebaseKey) {
       updateShoe(formInput).then(() => {
         history.push(`/details/${obj.firebaseKey}`);
-        console.warn('Shoes Updated!', formInput, uid);
+        /* console.warn('Shoes Updated!', formInput, uid); */
       });
     } else {
       createShoe({
@@ -60,7 +60,7 @@ export default function Form({ obj = {}, uid }) {
       }).then(() => {
         resetForm();
         history.push('/all');
-        console.warn('New Shoes Added!', formInput, uid);
+        /* console.warn('New Shoes Added!', formInput, uid); */
       });
     }
   };
