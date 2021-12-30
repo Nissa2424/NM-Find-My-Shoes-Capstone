@@ -5,6 +5,7 @@ import Card from '../components/Card';
 import { getAllShoes } from '../api/Shoedata';
 
 const CardStyle = styled.div`
+  text-align: center;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -18,12 +19,10 @@ const CardStyle = styled.div`
     border: 5px solid black;
   }
   .card {
-    background-color: #05a464;
-    margin: 15px;
-    padding: 10px;
-    text-align: center;
-    border: 8px bold rosyBrown;
-    color: dark blue;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(12rem, 16rem));
+    gap: 2rem;
+    justify-content: left;
   }
   .btn {
     border: 10px solid yellow;

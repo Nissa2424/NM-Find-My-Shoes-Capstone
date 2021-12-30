@@ -5,6 +5,8 @@ import Card from '../components/Card';
 import { getAllShoes } from '../api/Shoedata';
 
 const CardStyle = styled.div`
+  background-image: url('https://freedesignfile.com/upload/2020/03/Three-beams-stage-spotlight-background-vector.jpg');
+  text-align: center;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;

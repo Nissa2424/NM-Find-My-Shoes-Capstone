@@ -5,6 +5,7 @@ import Card from '../components/Card';
 import { getAllShoes } from '../api/Shoedata';
 
 const CardStyle = styled.div`
+  text-align: center;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
