@@ -69,7 +69,7 @@ export default function Form({ obj = {}, uid }) {
       <form onSubmit={handleClick}>
         <div className="mb-3">
           <label htmlFor="shoeName" className="input-group">
-            Shoe Name
+            Shoe Type
             <input
               className="form-control"
               value={formInput.shoeName || ''}
