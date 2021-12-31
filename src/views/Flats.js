@@ -6,7 +6,7 @@ import { getAllShoes } from '../api/Shoedata';
 
 const CardStyle = styled.div`
   text-align: center;
-  background-image: url('https://lh3.googleusercontent.com/proxy/e3YAtmNwokVmrwMYtd2GNj6CROO6bmq9YyVQAC-0I1xRbwbG1Ur06P_lelAljmewcZL-f4QIcxEBobhsBpRqAkC4pLNv3ZkO-DxCFBn94N--WctvwnyCgp__uwDgPGs');
+  background-image: url('https://footwearnews.com/wp-content/uploads/2018/08/vionic-flats.jpg');
   position: fixed;
   min-width: 100%;
   min-height: 100%;
