@@ -14,7 +14,8 @@ export default function Card({ shoe, setShoes }) {
       <div className="card">
         <img src={shoe.shoeImage} className="card-img-top" alt="..." />
         <div className="card-body">
-          <h5 className="card-title">{shoe.shoeName}</h5>
+          <h1 className="card-title">{shoe.shoeName}</h1>
+          <h5 className="card-description">{shoe.shoeDescription}</h5>
           <button
             type="button"
             onClick={() => handleClick('delete')}

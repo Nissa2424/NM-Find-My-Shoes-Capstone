@@ -5,6 +5,11 @@ import Card from '../components/Card';
 import { getAllShoes } from '../api/Shoedata';
 
 const CardStyle = styled.div`
+  text-align: center;
+  background-image: url('https://i.pinimg.com/736x/c4/18/b6/c418b6c477ce46c9594ec283d66ed4dc.jpg');
+  position: fixed;
+  min-width: 100%;
+  min-height: 100%;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -18,12 +23,11 @@ const CardStyle = styled.div`
     border: 5px solid black;
   }
   .card {
-    background-color: #05a464;
-    margin: 15px;
-    padding: 10px;
-    text-align: center;
-    border: 8px bold rosyBrown;
-    color: dark blue;
+    display: grid;
+    background-color: #5f6863;
+    grid-template-columns: repeat(auto-fit, minmax(12rem, 16rem));
+    gap: 2rem;
+    justify-content: left;
   }
   .btn {
     border: 10px solid yellow;

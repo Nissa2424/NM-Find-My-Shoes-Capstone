@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 const HomeStyle = styled.div`
 text-align: center;
-background-image: url("https://www.brandingstrategyinsider.com/images/2015/11/When-To-Assess-Your-Brand-Architecture.jpg");
+background-image: url("https://freedesignfile.com/upload/2020/03/Three-beams-stage-spotlight-background-vector.jpg");
 position: fixed;
 min-width: 100%;
 min-height: 60%;

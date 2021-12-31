@@ -5,6 +5,11 @@ import Card from '../components/Card';
 import { getAllShoes } from '../api/Shoedata';
 
 const CardStyle = styled.div`
+  text-align: center;
+  background-image: url('https://stylesatlife.com/wp-content/uploads/2017/05/20-Popular-Beautiful-High-Heel-Shoes-Designs-in-Trend.png.webp');
+  position: fixed;
+  min-width: 100%;
+  min-height: 100%;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;

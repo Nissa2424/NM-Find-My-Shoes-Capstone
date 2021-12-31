@@ -5,6 +5,11 @@ import Card from '../components/Card';
 import { getAllShoes } from '../api/Shoedata';
 
 const CardStyle = styled.div`
+  text-align: center;
+  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQfocoDxbFMopQrtiUd3UX0igHzgusA__FVIDzqpaZkYCxxgxuUx6ciOq6Q0sF_gYFGFk&usqp=CAU');
+  position: fixed;
+  min-width: 100%;
+  min-height: 100%;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
